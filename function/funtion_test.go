@@ -30,5 +30,6 @@ func TestMethodTest(t *testing.T) {
 	c1.radius = 10.00
 	fmt.Println("圆的面积为", c1.getArea())
 	fmt.Println("圆的半径为", c1.radius)
+	fmt.Println("圆的半径为", c1.radius)
 
 }
