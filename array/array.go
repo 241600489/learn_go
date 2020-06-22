@@ -15,6 +15,9 @@ func array_test() {
 	for j = 0; j < len(test_arr1); j++ {
 		fmt.Printf("Element[%d]=%f\n", j, test_arr1[j])
 	}
+	for i, j := range test_arr1 {
+		println(i, j)
+	}
 }
 
 //Go 语言向函数传递数组
