@@ -18,6 +18,7 @@ func array_test() {
 	for i, j := range test_arr1 {
 		println(i, j)
 	}
+	fmt.Println(test_arr1[1:])
 }
 
 //Go 语言向函数传递数组

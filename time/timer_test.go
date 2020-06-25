@@ -6,6 +6,6 @@ import (
 )
 
 func TestTimer(t *testing.T) {
-	timer()
+	//timer()
 	time.Sleep(time.Duration(10 * time.Second))
 }
