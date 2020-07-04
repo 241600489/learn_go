@@ -33,3 +33,7 @@ func getAverage(arr [5]int, size int) float32 {
 	return avg
 
 }
+func slice() {
+	var test = [3]int{1, 2, 3}
+	fmt.Println(test[1:3])
+}

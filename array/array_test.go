@@ -17,3 +17,7 @@ func TestGetAvg(t *testing.T) {
 	fmt.Println(getAverage(arr, 5))
 
 }
+
+func TestSlice(t *testing.T) {
+	slice()
+}
