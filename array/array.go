@@ -1,6 +1,9 @@
 package array
 
-import "fmt"
+import (
+	"encoding/binary"
+	"fmt"
+)
 
 func array_test() {
 	//var variable_name [SIZE] variable_type
@@ -36,4 +39,22 @@ func getAverage(arr [5]int, size int) float32 {
 func slice() {
 	var test = [3]int{1, 2, 3}
 	fmt.Println(test[1:3])
+}
+func slicePtr(a []int64) {
+	//a=append(a, 2)
+	fmt.Println(a)
+	b := []int64{2, 4, 5}
+	a = append(a, b...)
+	fmt.Println(a)
+}
+
+func SliceAppendStr() {
+	demo := append([]byte("hello "), "world"...)
+	fmt.Println(string(demo))
+}
+func intToByteSlice() {
+	c := []byte{67, 78, 90, 89, 93}
+	var a uint16 = 17
+	binary.BigEndian.PutUint16(c[2:4], a)
+	fmt.Print(c)
 }

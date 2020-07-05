@@ -21,3 +21,16 @@ func TestGetAvg(t *testing.T) {
 func TestSlice(t *testing.T) {
 	slice()
 }
+
+func TestSlicePtr(t *testing.T) {
+	a := []int64{1, 3}
+	slicePtr(a)
+}
+func TestSliceAppendStr(t *testing.T) {
+	SliceAppendStr()
+}
+
+func TestIntToByteSlice(t *testing.T) {
+	intToByteSlice()
+
+}
